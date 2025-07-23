@@ -1,2 +1,34 @@
-node_modules/*
+# =========================
+# Ignore arquivos não relevantes
+# =========================
+node_modules/* linguist-vendored
+dist/* linguist-vendored
+coverage/* linguist-vendored
+.env linguist-vendored
+*.log linguist-vendored
+*.lock linguist-vendored
+
+# =========================
+# Ignorar arquivos de configuração
+# =========================
+docker/* linguist-vendored
+*.dockerfile linguist-vendored
+*.yml linguist-vendored
+*.yaml linguist-vendored
+
+# =========================
+# Ignorar arquivos de banco e migrações
+# =========================
+prisma/* linguist-vendored
+migrations/* linguist-vendored
+*.sql linguist-vendored
+
+# =========================
+# Forçar JavaScript como linguagem principal
+# =========================
 *.js linguist-language=JavaScript
+*.mjs linguist-language=JavaScript
+*.cjs linguist-language=JavaScript
+
+# Se usar TypeScript, descomente:
+# *.ts linguist-language=TypeScript
