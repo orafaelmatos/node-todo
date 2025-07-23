@@ -1,13 +1,26 @@
-# BACKEND FULL COURSE - Node.JS Express.JS Prisma PostgreSQL & Docker
+# **Node.js Backend Todo App – Express, Prisma, PostgreSQL & Docker**
 
-This guide provides an overview of the codebase, the functionality of the app, and detailed instructions on how to set up and run the app. Make sure to follow all steps carefully, especially regarding Node.js version requirements.
+This project was developed as a **practical result of my Node.js learning journey**. After completing a course on Node.js and its ecosystem, I applied the concepts learned to build this **authentication-protected Todo API** with a minimal frontend for testing.
 
-## Overview
+The main goal of this project was to **reinforce core backend development concepts**, including:
+- REST API architecture with **Express.js**
+- **Authentication & Authorization** using **JWT**
+- **Secure password hashing** with **bcrypt**
+- **Database interaction** with **Prisma ORM**
+- **Containerized environment** using **Docker** and **PostgreSQL**
 
-This is an **Dockerized** and authentication-protected Todo App using **Node.js**, **Express.js**, **bcrypt**, **JWT authentication**, **Prisma**, and **PostgreSQL**. The app allows users to:
-- **Register**: Create a new account.
-- **Login**: Authenticate and receive a JWT token.
-- **Manage Todos**: Perform auth protected CRUD operations on their own todo tasks after logging in.
+ ## Overview
+This is a **Dockerized**, authentication-protected Todo App built with:
+- **Node.js & Express.js** for the backend API
+- **Prisma** as the database ORM
+- **PostgreSQL** as the database
+- **JWT & bcrypt** for user authentication and password security
+
+The app provides:
+- **User Registration**
+- **User Login**
+- **Protected CRUD Operations** for managing personal todos
+
 
 ## Project Structure
 
@@ -62,8 +75,7 @@ node-todo/
 2. **Create Migrations**: Use Prisma to generate and apply migrations.
 3. **Run Docker Compose**: Build and run the Node.js app and PostgreSQL using Docker Compose.
 4. **Interact with the API**: Use the frontend or API client (e.g., Postman) to register, login, and manage todos.
-
-This project structure and workflow will help organize your code and make it easier to maintain and scale as your application grows.
+   
 
 ## Getting Started
 
@@ -72,8 +84,8 @@ This project structure and workflow will help organize your code and make it eas
 1. **Clone the Repository**:
 
 ```bash
-git clone https://github.com/your-username/backend-todo-app.git
-cd backend-todo-app
+git clone https://github.com/orafaelmatos/node-todo.git
+cd node-todo
 ```
 
 2. **Generate the Prisma Client**:
