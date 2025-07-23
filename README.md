@@ -14,7 +14,7 @@ This is an **Dockerized** and authentication-protected Todo App using **Node.js*
 Here’s the corrected and complete project structure diagram for the auth-protected Todo App:
 
 ```
-backend-todo-app/
+node-todo/
 │
 ├── public/
 │   └── index.html              # The frontend HTML file for authentication and todo management
